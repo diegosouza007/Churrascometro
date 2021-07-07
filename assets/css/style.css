@@ -5,4 +5,9 @@
 
 html {
     font-size: 62.5%;
+    --red: #D81C23;
+    --blue: #4FA8C2;
+    --brown: #D97441;
+    --light-brown: #D29849;
+    --white: #EDF5E1;
 }
