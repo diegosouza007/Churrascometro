@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Churrascômetro</title>
 </head>
 
 <body>
     <div class="container">
+        <h2 id="title">Churrascômetro</h2>
         <section>
-            <div class="container-form">
-                <label for="adultos">Adultos</label>
-                <input type="number" id="adultos" placeholder="Insira a quantidade">
-                <label for="crianca">Adultos</label>
-                <input type="number" id="crianca" placeholder="Insira a quantidade">
-                <label for="duracao">Adultos</label>
-                <input type="number" id="duracao" placeholder="Insira a quantidade">
+            <div class="container__form">
+                <label for="adultos">Quantidade de adultos</label>
+                <input type="number" id="adultos" placeholder="Adultos">
+                <label for="crianca">Quantidade de crianças</label>
+                <input type="number" id="crianca" placeholder="Crianças">
+                <label for="duracao">Duração do churrasco</label>
+                <input type="number" id="duracao" placeholder="Duração">
+                <button class="result">Calcular</button>
             </div>
         </section>
+    </div>
+    <div class="modal">
+        <div class="modal_results"></div>
     </div>
 </body>
 

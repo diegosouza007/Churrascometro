@@ -4,10 +4,60 @@
 }
 
 html {
-    font-size: 62.5%;
     --red: #D81C23;
     --blue: #4FA8C2;
     --brown: #D97441;
     --light-brown: #D29849;
     --white: #EDF5E1;
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--red);
+    height: 100vh;
+    width: 100vw;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button {
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+}
+
+#title {
+    top: 20rem;
+    font-size: 5rem;
+    color: var(--white);
+    margin: 2rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container__form {
+    width: 50rem;
+    margin: auto;
+    background: var(--light-brown);
+    font-size: 1.6rem;
+    width: min(100rem, 90%);
+    padding: 3rem 5rem;
+    text-align: center;
+}
+
+.result {
+    font-weight: bold;
 }
