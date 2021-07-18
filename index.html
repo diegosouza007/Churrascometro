@@ -6,26 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/script.js"></script>
     <title>Churrascômetro</title>
 </head>
 
 <body>
+    <h2 id="title">Churrascômetro</h2>
     <div class="container">
-        <h2 id="title">Churrascômetro</h2>
         <section>
             <div class="container__form">
-                <label for="adultos">Quantidade de adultos</label>
-                <input type="number" id="adultos" placeholder="Adultos">
-                <label for="crianca">Quantidade de crianças</label>
-                <input type="number" id="crianca" placeholder="Crianças">
-                <label for="duracao">Duração do churrasco</label>
-                <input type="number" id="duracao" placeholder="Duração">
-                <button class="result">Calcular</button>
+                <label for="adult">Quantidade de adultos</label>
+                <input type="number" id="adult" placeholder="Adultos">
+                <label for="child">Quantidade de crianças</label>
+                <input type="number" id="child" placeholder="Crianças">
+                <label for="duration">Duração do churrasco</label>
+                <input type="number" id="duration" placeholder="Duração">
+                <button id="calc">Calcular</button>
             </div>
+            <div id="result"></div>
         </section>
     </div>
-    <div class="modal">
-        <div class="modal_results"></div>
+    <div id="modal">
+        <div class="modal__content">
+            <span id="close"></span>
+        </div>
     </div>
 </body>
 
