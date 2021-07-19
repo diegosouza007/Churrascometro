@@ -9,8 +9,11 @@ Children are worth 0,5 (half) **/
 const inputAdult = document.getElementById('adult');
 const inputChild = document.getElementById('child');
 const inputDuration = document.getElementById('duration');
-const buttonCalc = document.getElementById('calc');
-const result = document.getElementById('result');
+const calcButton = document.getElementById('calc');
+const modalArea = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal__content');
+const closeButton = document.getElementById('close');
+
 
 let beef = 400;
 let beer = 1200;
@@ -20,7 +23,8 @@ let beefMore6h = 250;
 let beerMore6h = 800;
 let sodaMore6h = 500;
 
-calc.addEventListener('click', calcBarbecueResults);
+calcButton.addEventListener('click', calcBarbecueResult);
+closeButton.addEventListener('click', closeModal);
 
 // Show the final results
 
@@ -28,7 +32,11 @@ function displayResults(beef, beer, soda) {
 
     let results = convertMeasures(beef, beer, soda);
 
-    console.log(results);
+    modalArea.classList.add('active');
+
+    modalContent.innerHTML += `<div><img src="./assets/img/beefv1.png">Carne: ${results.convertered_beef} kilos</div>`
+    modalContent.innerHTML += `<div><img src="./assets/img/beerv1.png">Cerveja: ${results.convertered_beer} litros</div>`
+    modalContent.innerHTML += `<div><img src="./assets/img/sodav1.png">Refrigerante: ${results.convertered_soda} litros</div>`
 
 }
 
@@ -49,7 +57,7 @@ function convertMeasures(beef, beer, soda) {
 
 // Get the values from the inputs fields and calculate the results in grams(gr) and milliliters(ml)
 
-function calcBarbecueResults() {
+function calcBarbecueResult() {
 
     let resultBeef;
     let resultBeer;
@@ -68,4 +76,11 @@ function calcBarbecueResults() {
 
         displayResults(resultBeef, resultBeer, resultSoda);
     }
+}
+
+function closeModal() {
+
+    modalArea.classList.remove('active');
+
+    location.reload();
 }

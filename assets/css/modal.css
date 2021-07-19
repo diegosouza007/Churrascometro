@@ -1,0 +1,75 @@
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    background: var(--brown);
+    width: min(52rem, 90%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal .modal__wrapper {
+    position: relative;
+    margin: auto;
+    background: var(--light-brown);
+    width: min(45rem, 90%);
+    padding: 6.4rem;
+    border-radius: 2rem;
+}
+
+.modal .modal__wrapper h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.modal .modal__wrapper .modal__content img {
+    width: 4.8rem;
+    margin-right: 1.2rem;
+}
+
+.modal .modal__wrapper .modal__content>div {
+    display: flex;
+    font-size: 2rem;
+}
+
+.modal .modal__wrapper .modal__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.modal .modal__wrapper .modal__content>div,
+.modal .modal__wrapper .modal__content {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#close {
+    display: flex;
+    color: var(--dark-grey);
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    font-size: 2.8rem;
+    background: var(--white);
+    border-radius: 50%;
+    padding: .7rem;
+    border: .3rem solid var(--dark-grey);
+    font-weight: bold;
+    width: 2.8rem;
+    height: 2.8rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
