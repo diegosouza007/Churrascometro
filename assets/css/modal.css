@@ -6,8 +6,9 @@
 .modal {
     display: flex;
     position: fixed;
-    background: var(--brown);
+    background: var(--dark-orange);
     width: min(52rem, 90%);
+    min-width: 37.5rem;
     top: 0;
     left: 0;
     width: 100vw;
@@ -18,10 +19,11 @@
 
 .modal .modal__wrapper {
     position: relative;
+    margin: 2rem;
     margin: auto;
-    background: var(--light-brown);
+    background: var(--orange);
     width: min(45rem, 90%);
-    padding: 6.4rem;
+    padding: 5rem;
     border-radius: 2rem;
 }
 
