@@ -5,10 +5,10 @@
 }
 
 html {
-    --dark-grey: #1A1A1D;
-    --grey: #4E4E50;
-    --dark-orange: #e76f51;
-    --orange: #f4a261;
+    --dark-grey: #212f35;
+    --grey: #435a64;
+    --dark-orange: #b54f40;
+    --orange: #fe735e;
     --white: #EAE7DC;
     font-size: 62.5%;
     min-width: 37.5rem;
@@ -67,18 +67,19 @@ button {
 }
 
 #container__title {
+    color: var(--dark-grey);
     font-size: clamp(2.5rem, 5rem, 5vw);
     text-align: center;
 }
 
 #container__description {
+    color: var(--dark-orange);
     font-size: 2.2rem;
     width: 100%;
 }
 
 #container__title,
 #container__description {
-    color: var(--dark-grey);
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 90%;

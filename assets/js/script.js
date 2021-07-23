@@ -33,7 +33,6 @@ function displayResults(beef, beer, soda) {
     let results = convertMeasures(beef, beer, soda);
 
     modalArea.classList.add('active');
-
     modalContent.innerHTML += `<div><img src="./assets/img/beefv1.png">Carne: ${results.convertered_beef} kilos</div>`
     modalContent.innerHTML += `<div><img src="./assets/img/beerv1.png">Cerveja: ${results.convertered_beer} litros</div>`
     modalContent.innerHTML += `<div><img src="./assets/img/sodav1.png">Refrigerante: ${results.convertered_soda} litros</div>`
@@ -67,20 +66,16 @@ function calcBarbecueResult() {
         resultBeef = (beef + beefMore6h) * inputAdult.value + (((beef + beefMore6h) / 2) * inputChild.value);
         resultBeer = (beer + beerMore6h) * inputAdult.value;
         resultSoda = (soda + sodaMore6h) * inputAdult.value + (((soda + sodaMore6h) / 2) * inputChild.value);
-
         displayResults(resultBeef, resultBeer, resultSoda);
     } else {
         resultBeef = beef * inputAdult.value + ((beef / 2) * inputChild.value);
         resultBeer = beer * inputAdult.value;
         resultSoda = soda * inputAdult.value + ((soda / 2) * inputChild.value);
-
         displayResults(resultBeef, resultBeer, resultSoda);
     }
 }
 
 function closeModal() {
-
     modalArea.classList.remove('active');
-
     location.reload();
 }
