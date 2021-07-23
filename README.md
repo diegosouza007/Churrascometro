@@ -17,6 +17,6 @@ Há uma outra condição a ser atendida: Caso o evento ultrapasse 6 horas de dur
 
 # Preview
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/11907759/126361308-89c2054e-272a-44cd-849f-deaebd27f4f9.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/11907759/126728990-52b75312-985c-4cbd-947d-846dc0ba72f4.gif)
 
 Live demo: <a href="https://diegosouza007.github.io/Churrascometro/">https://diegosouza007.github.io/Churrascometro</a>
